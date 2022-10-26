@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  color: white;
+}
+
+/* MenuIcon */
+.upper {
+  @apply rotate-45 translate-y-[3px] transition-transform;
+}
+.middle {
+  @apply hidden transition-transform;
+}
+.lower {
+  @apply -rotate-45 translate-y-[1px] translate-x-[1px] transition-[2000];
+}
