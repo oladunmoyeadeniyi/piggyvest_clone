@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Security } from "../../public/Images";
 import { PlanCard, HalfSection } from "../others";
-import { savingsPlan } from "../others/DummyData";
+import { savingsPlan } from "../../utilities/DummyData";
 
 const SecondSection = () => {
   return (
@@ -39,7 +39,7 @@ const SecondSection = () => {
         />
 
         <div className="grid grid-cols-1 mt-14 gap-11 mx-auto md:grid-cols-2 lg:mt-0">
-          {savingsPlan.map((plan) => (
+          {savingsPlan.slice(0, 4).map((plan) => (
             <PlanCard key={plan.name} {...plan} />
           ))}
         </div>

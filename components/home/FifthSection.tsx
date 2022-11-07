@@ -1,6 +1,6 @@
 import React from "react";
 import { HalfSection, CommentCard } from "../others";
-import { comments } from "../others/DummyData";
+import { comments } from "../../utilities/DummyData";
 
 const FifthSection = () => {
   return (

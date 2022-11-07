@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { savingsPlan } from "./DummyData";
+import { savingsPlan } from "../../utilities/DummyData";
 import Link from "next/link";
 
 type SavingsCardProps = {

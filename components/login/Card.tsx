@@ -1,13 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 type CardProps = {
   children: React.ReactNode;
   heading?: string;
   text?: string;
   button?: string;
+  path?: string;
 };
 
-const Card = ({ children, heading, text, button }: CardProps) => {
+const Card = ({ children, heading, text, button, path }: CardProps) => {
   return (
     <div className="w-[400px] h-fit bg-white rounded-r-[20px] rounded-t-[20px] mx-auto py-10 px-10">
       <div className="w-fit mx-auto text-center">
@@ -22,12 +24,14 @@ const Card = ({ children, heading, text, button }: CardProps) => {
       <div className="grid h-fit mt-7 gap-y-7">{children}</div>
 
       {button && (
-        <button
-          type="submit"
-          className="w-full text-[12px] bg-[#0d60d8] rounded-r-[4px] rounded-t-[4px] font-bold py-[12px] mt-8"
-        >
-          {button}
-        </button>
+        <Link href={`/${path}`} passHref>
+          <button
+            type="submit"
+            className="w-full text-[12px] bg-[#0d60d8] rounded-r-[4px] rounded-t-[4px] font-bold py-[12px] mt-8"
+          >
+            {button}
+          </button>
+        </Link>
       )}
     </div>
   );

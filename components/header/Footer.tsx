@@ -6,7 +6,7 @@ import LinkLoop from "../others/LinkLoop";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { Products, Company, Legal } from "../others/DummyData";
+import { Products, Company, Legal } from "../../utilities/DummyData";
 
 function Footer() {
   return (

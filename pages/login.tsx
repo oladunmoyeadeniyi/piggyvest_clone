@@ -21,6 +21,7 @@ const Login = () => {
           heading="Login to your account"
           text="Securely login to your PiggyVest"
           button="LOG IN"
+          path="/dashboard"
         >
           <TextField
             Ref={inputFocus()}
